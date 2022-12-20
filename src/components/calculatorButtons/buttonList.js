@@ -28,148 +28,124 @@ export default function ButtonList() {
           setVal
           onClickHandler={() => setVal(val + "(")}
         />
-        <button
-          onClick={() => setVal(val + ")")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          )
-        </button>
-        <button
-          onClick={() => setVal(val + "%")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          %
-        </button>
-        <button
-          onClick={() => setVal(val + "/")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          /
-        </button>
+        <Button
+          btnText=")"
+          val
+          setVal
+          onClickHandler={() => setVal(val + ")")}
+        />
+        <Button
+          btnText="%"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "%")}
+        />
+        <Button
+          btnText="/"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "/")}
+        />
       </div>
       <div>
-        <button
-          onClick={() => setVal(val + "7")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          7
-        </button>
-        <button
-          onClick={() => setVal(val + "8")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          8
-        </button>
-        <button
-          onClick={() => setVal(val + "9")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          9
-        </button>
-        <button
-          onClick={() => setVal(val + "*")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          x
-        </button>
+        <Button
+          btnText="7"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "7")}
+        />
+        <Button
+          btnText="8"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "8")}
+        />
+        <Button
+          btnText="9"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "9")}
+        />
+        <Button
+          btnText="x"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "*")}
+        />
       </div>
       <div>
-        <button
-          onClick={() => setVal(val + "4")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          4
-        </button>
-        <button
-          onClick={() => setVal(val + "5")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          5
-        </button>
-        <button
-          onClick={() => setVal(val + "6")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          6
-        </button>
-        <button
-          onClick={() => setVal(val + "-")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          -
-        </button>
+        <Button
+          btnText="4"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "4")}
+        />
+        <Button
+          btnText="5"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "5")}
+        />
+        <Button
+          btnText="6"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "6")}
+        />
+        <Button
+          btnText="-"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "-")}
+        />
       </div>
       <div>
-        <button
-          onClick={() => setVal(val + "1")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          1
-        </button>
-        <button
-          onClick={() => setVal(val + "2")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          2
-        </button>
-        <button
-          onClick={() => setVal(val + "3")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          3
-        </button>
-        <button
-          onClick={() => setVal(val + "+")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          +
-        </button>
+        <Button
+          btnText="1"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "1")}
+        />
+        <Button
+          btnText="2"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "2")}
+        />
+        <Button
+          btnText="3"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "3")}
+        />
+        <Button
+          btnText="+"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "+")}
+        />
       </div>
 
       <div>
-        <button
-          onClick={() => setVal(-val)}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          +/-
-        </button>
-        <button
-          onClick={() => setVal(val + "0")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          0
-        </button>
-        <button
-          onClick={() => setVal(val + ".")}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          .
-        </button>
-        <button
-          onClick={() => setVal(eval(val))}
-          type="button"
-          class="btn btn-outline-dark"
-        >
-          =
-        </button>
+        <Button btnText="+/-" val setVal onClickHandler={() => setVal(-val)} />
+        <Button
+          btnText="0"
+          val
+          setVal
+          onClickHandler={() => setVal(val + "0")}
+        />
+        <Button
+          btnText="."
+          val
+          setVal
+          onClickHandler={() => setVal(val + ".")}
+        />
+        <Button
+          btnText="="
+          val
+          setVal
+          onClickHandler={() => setVal(eval(val))}
+        />
       </div>
     </div>
   );
